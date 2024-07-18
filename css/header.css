@@ -1,109 +1,136 @@
 /* style for header  */
 
 .menu-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensure items are spaced out */
-    background: rgb(21, 61, 102);
-    text-align: center;
-    z-index: 1000;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure items are spaced out */
+  background: #0d5c7e;
+  text-align: center;
+  z-index: 1000;
+  width: 100%;
+  position: relative; /* Ensure positioning context */
 }
 
 .menu-bar a img {
-    height: 100px;
-    width: 100px;
-    margin: 5px 40px; /* Add spacing around the image */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image fits within the circular frame */
+  height: 100px;
+  width: 100px;
+  margin: 5px 40px; /* Add spacing around the image */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image fits within the circular frame */
 }
 
-
-
-
 .menu-bar ul {
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-bar ul li {
-    width: 120px;
-    height: 60px;
-    margin: 15px;
-    padding: 15px;
-    position: relative; /* Ensure the li elements are positioned relatively */
+  width: 120px;
+  height: 60px;
+  margin: 15px;
+  padding: 15px;
+  position: relative; /* Ensure the li elements are positioned relatively */
 }
 
 .menu-bar ul li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .menu-bar ul li:hover {
-    background: #33e276f1;
-    border-radius: 20px;
-    transition: 1s;
+  background: #1092ad;
+  border-radius: 20px;
+  transition: 1s;
 }
 
 .menu-bar .fa {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
-.sub-menu-1, .sub-menu2 {
-    display: none;
-    position: absolute;
-    background: rgb(19, 182, 19);
-    z-index: 1001; /* Ensure submenus have a higher z-index */
+.sub-menu-1,
+.sub-menu2 {
+  display: none;
+  position: absolute;
+  background: #0d5c7e;
+  z-index: 1001; /* Ensure submenus have a higher z-index */
 }
 
 .menu-bar ul li:hover .sub-menu-1 {
-    display: block;
-    margin-top: 15px;
-    margin-left: -15px;
+  display: block;
+  margin-top: 15px;
+  margin-left: -15px;
 }
 
 .menu-bar ul li:hover .sub-menu2 {
-    display: none; /* Hide sub-menu2 when hovering over li with sub-menu-1 */
+  display: none; /* Hide sub-menu2 when hovering over li with sub-menu-1 */
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul {
-    display: block;
-    margin: 10px;
+  display: block;
+  margin: 10px;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li {
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
-    color: #b2ff00;
+  color: #1092ad;
 }
 
 .fa-angle-right {
-    float: right;
+  float: right;
 }
 
 .hover-me:hover .sub-menu2 {
-    display: block;
-    margin-top: -40px;
-    margin-left: 140px;
-    background: rgb(0, 100, 0);
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: #0d5c7e;
 }
 
 .menu-bar ul li .sub-menu-1 ul li:hover .sub-menu2 {
-    display: block;
+  display: block;
 }
 
+.menu-bar ul a {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.menu-bar a.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px; /* Adjust height as needed */
+  padding: 0 20px; /* Adjust padding as needed */
+  margin: 15px; /* Adjust margin as needed */
+  text-decoration: none;
+  color: #0d5c7e;
+  border: 2px solid white;
+  border-radius: 30px; /* Adjust border-radius as needed */
+  transition: all 0.3s ease;
+}
+
+.menu-bar a.button:hover {
+  background: white;
+  color: #1092ad;
+}
+
+.menu-bar a.button:focus {
+  outline: none; /* Remove outline on focus */
+}
 /* end of style of header  */
