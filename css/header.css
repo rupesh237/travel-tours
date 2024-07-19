@@ -1,22 +1,23 @@
 /* style for header  */
 
+
 .menu-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensure items are spaced out */
+  justify-content: space-between; 
   background: #0d5c7e;
   text-align: center;
   z-index: 1000;
   width: 100%;
-  position: relative; /* Ensure positioning context */
+  position: relative; 
 }
 
 .menu-bar a img {
   height: 100px;
   width: 100px;
-  margin: 5px 40px; /* Add spacing around the image */
-  border-radius: 50%; /* Make the image circular */
-  object-fit: cover; /* Ensure the image fits within the circular frame */
+  margin: 5px 40px; 
+  border-radius: 50%; 
+  object-fit: cover; 
 }
 
 .menu-bar ul {
@@ -32,7 +33,7 @@
   height: 60px;
   margin: 15px;
   padding: 15px;
-  position: relative; /* Ensure the li elements are positioned relatively */
+  position: relative; 
 }
 
 .menu-bar ul li a {
@@ -55,7 +56,7 @@
   display: none;
   position: absolute;
   background: #0d5c7e;
-  z-index: 1001; /* Ensure submenus have a higher z-index */
+  z-index: 1001; 
 }
 
 .menu-bar ul li:hover .sub-menu-1 {
@@ -65,7 +66,7 @@
 }
 
 .menu-bar ul li:hover .sub-menu2 {
-  display: none; /* Hide sub-menu2 when hovering over li with sub-menu-1 */
+  display: none; 
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul {
@@ -115,13 +116,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px; /* Adjust height as needed */
-  padding: 0 20px; /* Adjust padding as needed */
-  margin: 15px; /* Adjust margin as needed */
+  height: 60px; 
+  padding: 0 20px; 
+  margin: 15px; 
   text-decoration: none;
   color: #0d5c7e;
   border: 2px solid white;
-  border-radius: 30px; /* Adjust border-radius as needed */
+  border-radius: 30px; 
   transition: all 0.3s ease;
 }
 
@@ -131,6 +132,143 @@
 }
 
 .menu-bar a.button:focus {
-  outline: none; /* Remove outline on focus */
+   outline: none; 
 }
+
+/* Style for the hamburger icon */
+.hamburger {
+  font-size: 2em;  /* Increase the font size */
+  padding: 10px;  /* Add some padding around the icon */
+  color: white;   /* Change the color if needed */
+}
+
+
 /* end of style of header  */
+
+
+/* Responsive styling for header */
+@media (max-width: 768px) {
+  .menu-bar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #0d5c7e;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .menu-bar.active ul {
+    display: flex;
+  }
+
+  .menu-bar ul li {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .menu-bar ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-bar a.button {
+    display: none;
+  }
+  
+  .menu-bar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-bar a img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-bar .hamburger {
+    display: none;
+  }
+}
+
+
+
+/* Responsive styling for header */
+@media (max-width: 768px) {
+  .menu-bar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #0d5c7e;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .menu-bar.active ul {
+    display: flex;
+  }
+
+  .menu-bar ul li {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    position: relative; /* Ensure submenus are positioned relative to their parent */
+  }
+
+  .menu-bar ul li .sub-menu-1 {
+    position: static; /* Submenus should be positioned statically to ensure they appear below */
+    display: none;
+    width: 100%;
+  }
+
+  .menu-bar ul li.active .sub-menu-1 {
+    display: block;
+  }
+
+  .menu-bar ul li .sub-menu-1 ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  .menu-bar ul li .sub-menu-1 ul li {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    text-align: center;
+  }
+
+  .menu-bar ul li .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-bar a.button {
+    display: none;
+  }
+  
+  .menu-bar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-bar a img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+
+
+
+
+
