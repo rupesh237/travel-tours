@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"> </script>
@@ -107,8 +109,8 @@
                 <div class="menu-bar">
                     <a href=""><img src="images/logo.png" alt="Logo" class="image-fluid" height="50" width="50"></a>
                     <ul>
-                        <li class="active"><a href="/"><i class="fa fa-home"></i>Home</a></li>
-                        <li><a href="#"><i class="fa fa-user"></i>About Us</a>
+                        <li class="active"><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i>About Us</a>
                             <div class="sub-menu-1">
                                 <ul>
                                     <li><a href="mission.html">Mission</a></li>
@@ -117,7 +119,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+                        <li><a href="#services"><i class="fa fa-clone"></i>Services</a>
                             <div class="sub-menu-1">
                                 <ul>
                                     <li><a href="#">Shipment & Cargo</a></li>
@@ -130,7 +132,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="hover-me"><a href="#">Air Ticket</a><i class="fa fa-angle-right"></i>
+                                    <li class="hover-me"><a href="#air-ticket">Air Ticket</a><i class="fa fa-angle-right"></i>
                                         <div class="sub-menu2">
                                             <ul>
                                                 <li><a href="#">Domestic</a></li>
@@ -141,9 +143,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#"><i class="fa fa-dollar"></i>Business Rentals</a></li>
-                        <li><a href="#"><i class="fa fa-edit"></i>Blog</a></li>
-                        <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+                        <li><a href="#business-rentals"><i class="fa fa-dollar"></i>Business Rentals</a></li>
+                        <li><a href="#blog"><i class="fa fa-edit"></i>Blog</a></li>
+                        <li><a href="#contact"><i class="fa fa-phone"></i>Contact</a></li>
                         <a class="button button-default-outline button-nina button-sm"href="#">Travel</a>
                     </ul>
                 </div>
@@ -152,7 +154,8 @@
         </div>
       </header>
 
-      <section class="section">
+      <!--home section content-->
+      <section class="section" id="home">
         <div class="swiper-form-wrap">
           <!-- Swiper-->
           <div class="swiper-container swiper-slider swiper-slider_height-1 swiper-align-left swiper-align-left-custom context-dark bg-gray-darker" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
@@ -188,7 +191,7 @@
                   <div class="container container-bigger swiper-main-section">
                     <div class="row row-fix justify-content-sm-center justify-content-md-start">
                       <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>unique Travel Insights</h3>
+                        <h3>Unique Travel Insights</h3>
                         <div class="divider divider-decorate"></div>
                         <p class="text-spacing-sm">Our team is ready to provide you with unique weekly travel insights that include photos, videos, and articles about untravelled tourist paths. We know everything about the places you’ve never been to!</p><a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
                       </div>
@@ -286,6 +289,88 @@
         </div>
       </section>
 
+      
+      <!-- About Section -->
+       <section id="about" class="about-section bg-light text-center">
+  <div class="container-fluid">
+    <h3>ABOUT US</h3>
+    <div class="divider divider-decorate"></div>
+    <!-- First Row -->
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="p-4">
+          <h2 class="about-title">Our Mission</h2>
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="p-4">
+          <h2 class="about-title">Our Vision</h2>
+          <p class="about-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="team-member">
+          <div class="row">
+            <div class="col-12">
+              <img src="https://via.placeholder.com/150" alt="Team Member" class="team-img">
+            </div>
+            <div class="col-12">
+              <div class="team-name">John Doe</div>
+              <div class="team-role">CEO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="team-member">
+          <div class="row">
+            <div class="col-12">
+              <img src="https://via.placeholder.com/150" alt="Team Member" class="team-img">
+            </div>
+            <div class="col-12">
+              <div class="team-name">Jane Smith</div>
+              <div class="team-role">CTO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="team-member">
+          <div class="row">
+            <div class="col-12">
+              <img src="https://via.placeholder.com/150" alt="Team Member" class="team-img">
+            </div>
+            <div class="col-12">
+              <div class="team-name">Emily Johnson</div>
+              <div class="team-role">CFO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="team-member">
+          <div class="row">
+            <div class="col-12">
+              <img src="https://via.placeholder.com/150" alt="Team Member" class="team-img">
+            </div>
+            <div class="col-12">
+              <div class="team-name">Michael Brown</div>
+              <div class="team-role">COO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+       </section>
+
+
+      <!--tour content-->
       <section class="section section-variant-1 bg-default novi-background bg-cover"> 
         <div class="container container-wide">
           <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
@@ -374,26 +459,28 @@
         </div>
       </section>
 
-      <!-- our advantages-->
-      <section class="section section-lg bg-gray-lighter novi-background bg-cover text-center">
+      <!-- service section content-->
+      <section id="services" class="section section-lg bg-gray-lighter novi-background bg-cover text-center">
         <div class="container container-wide">
           <h3>our services</h3>
           <div class="divider divider-decorate"></div>
           <div class="row row-50 justify-content-sm-center text-left">
             <div class="col-sm-10 col-md-6 col-xl-3">
               <article class="box-minimal box-minimal-border">
-                <div class="box-minimal-icon novi-icon mdi mdi-airplane"></div>
-                <p class="big box-minimal-title">Air Tickets</p>
+                <div class="box-minimal-icon novi-icon mdi mdi-car"></div>
+                <p class="big box-minimal-title">Rent Vehicles</p>
                 <hr>
-                <div class="box-minimal-text text-spacing-sm">At our travel agency, you can book air tickets to any world destination. We also provide online ticket booking via our website in just a couple of steps.</div>
+                <div class="box-minimal-text text-spacing-sm">
+                 We offer a variety of vehicles for rent, providing customers with convenient and flexible options for their transportation needs.
+                </div>
               </article>
             </div>
             <div class="col-sm-10 col-md-6 col-xl-3">
               <article class="box-minimal box-minimal-border">
-                <div class="box-minimal-icon novi-icon mdi mdi-map"></div>
-                <p class="big box-minimal-title">Rafting & Cruises</p>
+                <div class="box-minimal-icon novi-icon mdi mdi-airplane"></div>
+                <p class="big box-minimal-title">Air Tickets</p>
                 <hr>
-                <div class="box-minimal-text text-spacing-sm">Besides regular tours and excursions, we also offer a variety of cruises & sea voyages for different customers looking for awesome experiences.</div>
+                <div class="box-minimal-text text-spacing-sm">At our travel agency, you can book air tickets to any world destination. We also provide online ticket booking via our website in just a couple of steps.</div>
               </article>
             </div>
             <div class="col-sm-10 col-md-6 col-xl-3">
@@ -407,7 +494,7 @@
             <div class="col-sm-10 col-md-6 col-xl-3">
               <article class="box-minimal box-minimal-border">
                 <div class="box-minimal-icon novi-icon mdi mdi-beach"></div>
-                <p class="big box-minimal-title">Tailored Summer Tours</p>
+                <p class="big box-minimal-title">Packaged Tours</p>
                 <hr>
                 <div class="box-minimal-text text-spacing-sm">Our agency provides varied tours including tailored summer tours for clients who are searching for an exclusive and memorable vacation.</div>
               </article>
@@ -416,8 +503,8 @@
         </div>
       </section>
 
-      <!-- Tips & tricks-->
-      <section class="section section-lg novi-background bg-cover bg-default text-center">
+      <!-- blog section content-->
+      <section id="blog" class="section section-lg novi-background bg-cover bg-default text-center">
         <div class="container-wide">
           <div class="row row-50">
             <div class="col-sm-12">
@@ -486,6 +573,7 @@
         </div>
       </section>
 
+      <!--buy a tour section content-->
       <section class="section section-lg text-center bg-gray-lighter novi-background bg-cover">
         <div class="container container-bigger">
           <h3>testimonials</h3>
@@ -535,6 +623,7 @@
         </div>
       </section>
 
+      <!--testimonial section content-->
       <section class="section section-md text-center text-md-left bg-gray-700 novi-background bg-cover p-300">
         <div class="container container-wide">
           <div class="row row-fix row-50 justify-content-sm-center">
@@ -551,6 +640,76 @@
         </div>
       </section>
       <!-- </section><a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )"><img src="images/banner/foreground-03-1600x310.png" srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt="" width="1600" height="310"></a> -->
+
+      <!--Contact Section Content-->
+      <section id="contact" class="contact-section section-lg bg-light text-center">
+  <div class="container-fluid">
+    <h3>CONTACT US</h3>
+    <div class="divider divider-decorate"></div>
+    <p>Ready to elevate your digital presence? Reach out to <b>M And MB Soft Tech Pvt. Ltd.</b> today. Our team is eager to assist you with tailored solutions that drive success and innovation for your business. Let's start a conversation and make your digital dreams a reality.</p>
+    <div class="row">
+      <!-- First Column: Contact Information -->
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="p-4">
+          <div class="info-wrap">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Sankhamul Street, New Baneshwor-10, 44600</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+9779814890237</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p><a href="mailto:info@mbsoftech.com.np">info@mbsoftech.com.np</a></p>
+              </div>
+            </div>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28349.231142913548!2d101.40446937431642!3d27.35528700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x77bfee08c61c7d%3A0x9ef2737d632b7307!2sM%20And%20MB%20Soft%20Tech%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1718644785200!5m2!1sen!2snp" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!-- Second Column: Contact Form -->
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="p-4">
+          <form id="send-message-form" name="submit-to-google-sheet" class="php-email-form">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <label for="name-field" class="pb-2">Your Name</label>
+                <input type="text" name="name" id="name-field" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email-field" class="pb-2">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email-field" required>
+              </div>
+              <div class="col-md-12">
+                <label for="subject-field" class="pb-2">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject-field" required>
+              </div>
+              <div class="col-md-12">
+                <label for="message-field" class="pb-2">Message</label>
+                <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+      </section>
+
+
 
       <!-- Footer Minimal-->
       <footer>
@@ -622,6 +781,85 @@
     });
   });
 </script>
+
+    <!--JS to make Nav-link's to active as you scroll through sections-->
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
+  const navLi = document.querySelectorAll('.menu-bar ul li');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLi.forEach(li => {
+      li.classList.remove('active');
+      if (li.querySelector('a').getAttribute('href').includes(current)) {
+        li.classList.add('active');
+      }
+    });
+  });
+});
+
+</script>
+
+<!--JS to achieve the functionality to display submenu in mobile view on click-->
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuBar = document.querySelector('.menu-bar');
+    const menuItems = menuBar.querySelectorAll('ul > li');
+    const subMenu1Items = menuBar.querySelectorAll('.sub-menu-1');
+    const subMenu2Items = menuBar.querySelectorAll('.sub-menu2');
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.stopPropagation();
+            subMenu1Items.forEach(subMenu => {
+                if (subMenu !== this.querySelector('.sub-menu-1')) {
+                    subMenu.style.display = 'none';
+                }
+            });
+            const subMenu1 = this.querySelector('.sub-menu-1');
+            if (subMenu1) {
+                subMenu1.style.display = subMenu1.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    });
+
+    subMenu1Items.forEach(subMenu1 => {
+        const subMenu1Parent = subMenu1.closest('li');
+        const subMenu2 = subMenu1.querySelector('.sub-menu2');
+        if (subMenu2) {
+            subMenu1Parent.addEventListener('click', function(e) {
+                e.stopPropagation();
+                subMenu2Items.forEach(subMenu => {
+                    if (subMenu !== subMenu2) {
+                        subMenu.style.display = 'none';
+                    }
+                });
+                subMenu2.style.display = subMenu2.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+    });
+
+    document.addEventListener('click', function() {
+        subMenu1Items.forEach(subMenu => {
+            subMenu.style.display = 'none';
+        });
+        subMenu2Items.forEach(subMenu => {
+            subMenu.style.display = 'none';
+        });
+    });
+});
+</script> -->
+
 
 
   </body>

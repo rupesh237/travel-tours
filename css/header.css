@@ -44,7 +44,7 @@
 .menu-bar ul li:hover {
   background: #1092ad;
   border-radius: 20px;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .menu-bar .fa {
@@ -52,17 +52,19 @@
 }
 
 .sub-menu-1,
-.sub-menu2 {
+.sub-menu2
+ {
   display: none;
   position: absolute;
   background: #0d5c7e;
   z-index: 1001; 
 }
 
+
 .menu-bar ul li:hover .sub-menu-1 {
   display: block;
-  margin-top: 15px;
-  margin-left: -15px;
+  margin-top: 20px;
+  margin-left: -20px;
 }
 
 .menu-bar ul li:hover .sub-menu2 {
@@ -97,8 +99,8 @@
 
 .hover-me:hover .sub-menu2 {
   display: block;
-  margin-top: -40px;
-  margin-left: 140px;
+  margin-top: -50px;
+  margin-left: 160px;
   background: #0d5c7e;
 }
 
@@ -127,8 +129,9 @@
 }
 
 .menu-bar a.button:hover {
-  background: white;
-  color: #1092ad;
+  background: #1092ad;
+  color: #ffffff;
+  border: none;
 }
 
 .menu-bar a.button:focus {
@@ -269,6 +272,24 @@
 
 
 
+/* Nav-Link's to active as you scroll through section */
+
+nav .menu-bar ul li.active {
+background-color: #1092ad;
+border-radius:20px;
+transition: 1s;
+}
+
+nav .menu-bar ul li.active  a {
+color: #ffffff;
+}
 
 
+/* 
+.menu-bar ul li:hover .sub-menu-1,
+.menu-bar ul li .sub-menu-1:hover,
+.menu-bar ul li:hover .sub-menu2,
+.menu-bar ul li .sub-menu2:hover {
+    display: block; /* Display on hover */
+} */
 
