@@ -3926,11 +3926,11 @@ section {
   box-shadow: 0 6px 10px 0 rgba(255, 169, 0, 0.36);
 }
 
-.button-shadow.button-secondary:hover {
+.button-shadow.button-secondary1:hover {
   box-shadow: 0 6px 10px 0 rgba(44, 32, 192, 0.36);
 }
 
-.button-shadow.button-secondary:active {
+.button-shadow.button-secondary1:active {
   box-shadow: none;
 }
 
@@ -4771,11 +4771,11 @@ textarea.form-input.form-input-lg {
 }
 
 .form-wrap + .form-wrap {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .form-wrap-inline + .form-wrap-inline {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 * + .button.form-button,
