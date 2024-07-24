@@ -2,12 +2,17 @@
 .about-section {
   padding: 3rem 0;
   background-color: #ffffff;
-  background-image: ;
 }
 
 .about-title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: left;
+  color: #0d5c7e;
+}
+
+.row {
+  padding: 10px 10px;
 }
 
 .divider {
@@ -20,11 +25,11 @@
 .about-text {
   font-size: 1rem;
   line-height: 1.6;
+  text-align: left !important;
 }
 
-.our-story,
-.our-long-term-goals {
-  text-align: center;
+.our-story{
+  text-align: left !important ;
 }
 
 .our-story img,
@@ -41,6 +46,8 @@
 .story {
   font-size: 1rem;
   line-height: 1.6;
+  color: #ffffff;
+  text-align: left !important;
 }
 
 .team-member {
