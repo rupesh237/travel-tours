@@ -20199,3 +20199,16 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 * Fonts
 * ==================================================
 */
+
+
+/* Custom button styles */
+.button.button-block.button-secondary {
+  height: 50px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center ;
+  justify-content: center ;
+  padding: 0; /* Remove default padding */
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: center ;
+  
+}
