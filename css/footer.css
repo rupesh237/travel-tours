@@ -82,20 +82,72 @@ footer form input{
     border: 0;
     outline: none;
 }
+*/
 
-
-footer .social-icons .fa-brands{
+/* footer .social-icons .fa-brands{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 90%;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
     color: #000;
-    background: #fff;
     margin-right: 15px;
     cursor: pointer;
+} */
+/* Base style for the social icons container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some space at the top */
 }
+
+/* Style for each icon */
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Fully rounded */
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white; /* Icon color */
+    background-color: #000; /* Default background color */
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Remove margin for the last icon */
+.social-icons .fa-brands:last-child {
+    margin-right: 0;
+}
+
+/* Hover effects for each icon with different background colors */
+.social-icons .fa-facebook:hover {
+    background-color: #3b5998; /* Facebook blue */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-icons .fa-twitter:hover {
+    background-color: #00aced; /* Twitter blue */
+    transform: scale(1.1);
+}
+
+.social-icons .fa-linkedin:hover {
+    background-color: #007bb6; /* LinkedIn blue */
+    transform: scale(1.1);
+}
+
+.social-icons .fa-whatsapp:hover {
+    background-color: #25d366; /* WhatsApp green */
+    transform: scale(1.1);
+}
+
+
+
+
+/*
 .colss h3{
     color: white;
 }

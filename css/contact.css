@@ -1,163 +1,310 @@
-.contact .info-wrap {
-  box-shadow: 0px 0px 20px
-    color-mix(in srgb, var(--default-color), transparent 90%);
-  border-top: 3px solid var(--accent-color);
-  border-bottom: 3px solid var(--accent-color);
-  padding: 30px;
-  height: 100%;
+ /* Contact Section CSS */
+    /* .contact .info-wrap {
+      box-shadow: 0px 0px 20px color-mix(in srgb, #444444, transparent 90%);
+      border-top: 5px solid #0d5c7e;
+      border-bottom: 3px solid #0d5c7e;
+      border: #df1529;
+      padding: 20px;
+      height: 100%;
+    }
+
+    @media (max-width: 575px) {
+      .contact .info-wrap {
+        padding: 20px;
+      }
+    }
+
+    .contact .info-item {
+      margin-bottom: 10px;
+    }
+
+    .contact .info-item i {
+      font-size: 20px;
+      color: #0d90c9;
+      background: color-mix(in srgb, #0d5c7e, transparent 92%);
+      width: 30px;
+      height: 3px;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      margin-right: 15px;
+    }
+
+
+ .icon {
+      font-size: 24px;
+      margin: 10px;
+    }
+
+
+    */ 
+
+    
+    .contact .php-email-form {
+      height: 100%;
+      padding: 30px;
+      border-top: 3px solid #0d5c7e;
+      border-bottom: 3px solid #0d5c7e;
+      box-shadow: 0px 0px 20px color-mix(in srgb, #444444, transparent 90%);
+    }
+
+    @media (max-width: 575px) {
+      .contact .php-email-form {
+        padding: 20px;
+      }
+    }
+
+    .contact .php-email-form .error-message {
+      display: none;
+      background: #df1529;
+      color: #ffffff;
+      text-align: left;
+      padding: 15px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    } 
+
+    .contact .php-email-form .sent-message {
+      display: none;
+      color: #ffffff;
+      background: #059652;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .contact .php-email-form .loading {
+      display: none;
+      background: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 24px;
+    }
+
+    .contact .php-email-form .loading:before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      margin: 0 10px -6px 0;
+      border: 3px solid #0d5c7e;
+      border-top-color: #ffffff;
+      animation: animate-loading 1s linear infinite;
+    }
+
+    .contact .php-email-form input[type="text"],
+    .contact .php-email-form input[type="email"],
+    .contact .php-email-form textarea {
+      font-size: 14px;
+      padding: 10px 15px;
+      box-shadow: none;
+      border-radius: 0;
+      color: #444444;
+      background-color: color-mix(in srgb, #ffffff, transparent 50%);
+      border-color: color-mix(in srgb, #444444, transparent 80%);
+    }
+
+    .contact .php-email-form input[type="text"]:focus,
+    .contact .php-email-form input[type="email"]:focus,
+    .contact .php-email-form textarea:focus {
+      border-color: #0d5c7e;
+    }
+
+    .contact .php-email-form input[type="text"]::placeholder,
+    .contact .php-email-form input[type="email"]::placeholder,
+    .contact .php-email-form textarea::placeholder {
+      color: color-mix(in srgb, #444444, transparent 70%);
+    }
+
+    .contact .php-email-form button[type="submit"] {
+      color: var(--contrast-color);
+      background: #0d5c7e;
+      border: 0;
+      padding: 10px 30px;
+      transition: 0.4s;
+      border-radius: 50px;
+    }
+
+    .contact .php-email-form button[type="submit"]:hover {
+      background: color-mix(in srgb, #0d5c7e, transparent 25%);
+    }
+
+    @keyframes animate-loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    } */
+
+    .contact-section .info-item {
+  margin-bottom: 10px;
 }
 
-@media (max-width: 575px) {
-  .contact .info-wrap {
-    padding: 20px;
-  }
-}
-
-.contact .info-item {
-  margin-bottom: 40px;
-}
-
-.contact .info-item i {
+.contact-section .info-item i {
   font-size: 20px;
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  width: 44px;
-  height: 44px;
+  color: #0d90c9;
+  background: color-mix(in srgb, #0d5c7e, transparent 92%);
+  width: 30px;
+  height: 30px;  /* Changed from 3px to 30px for a better circular appearance */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
+  justify-content: center;  /* Changed to center to align icon in the circle */
+  align-items: center;  /* Changed to center to align icon in the circle */
+  border-radius: 50%;  /* Changed from 50px to 50% for a circular shape */
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
 }
 
-.contact .php-email-form {
-  height: 100%;
-  padding: 30px;
-  border-top: 3px solid var(--accent-color);
-  border-bottom: 3px solid var(--accent-color);
-  box-shadow: 0px 0px 20px
-    color-mix(in srgb, var(--default-color), transparent 90%);
+.contact-section .icon {
+  font-size: 24px;
+  margin: 10px;
 }
 
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
+.contact-section .info-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+.contact-section .info-item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact .php-email-form {
-  height: 100%;
-  padding: 30px;
-  border-top: 3px solid var(--accent-color);
-  border-bottom: 3px solid var(--accent-color);
-  box-shadow: 0px 0px 20px
-    color-mix(in srgb, var(--default-color), transparent 90%);
+.contact-section .info-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  text-align: left;  /* Align text to the left */
 }
 
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
+.contact-section .info-item p {
+  margin: 5px 0 0 0;  /* Reduce the gap between h3 and p */
+  color: #555;
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
+.contact-section .container-fluid {
   text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+  padding-bottom: 10px;
 }
 
-.contact .php-email-form .loading {
-  display: none;
-  background: var(--background-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
+.contact-section .divider {
+  margin: 20px auto;
+  width: 80px;
+  height: 3px;
+  background-color: #0d90c9;
 }
 
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--background-color);
-  animation: animate-loading 1s linear infinite;
+.contact-section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.contact .php-email-form input[type="text"],
-.contact .php-email-form input[type="email"],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
+.contact-section p {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+
+/* 2nd section css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.contact-section {
+  padding: 50px 0;
+}
+
+.contact-section h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+label {
+  text-align: left;
+  display: block; /* Ensures the label takes up the full width of its container */
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Form Styles */
+.php-email-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.php-email-form .form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  height: auto;
   box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 50%
-  );
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type="text"]:focus,
-.contact .php-email-form input[type="email"]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+.php-email-form .form-control:focus {
+  border-color: #0d90c9;
+  box-shadow: 0 0 8px rgba(13, 144, 201, 0.2);
 }
 
-.contact .php-email-form input[type="text"]::placeholder,
-.contact .php-email-form input[type="email"]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+.php-email-form label {
+  font-weight: bold;
+  color: #333;
 }
 
-.contact .php-email-form button[type="submit"] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+.php-email-form button[type="submit"] {
+  background: #0d90c9;
   border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
+  padding: 10px 24px;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+.php-email-form button[type="submit"]:hover {
+  background: #0b7ca1;
 }
 
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+/* Margin and padding adjustments */
+.php-email-form .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.php-email-form .col-md-6,
+.php-email-form .col-md-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .php-email-form {
+    padding: 20px;
   }
 
-  100% {
-    transform: rotate(360deg);
+  .php-email-form .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .php-email-form .col-md-6,
+  .php-email-form .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
