@@ -1,23 +1,22 @@
 /* style for header  */
 
-
 .menu-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   background: #0d5c7e;
   text-align: center;
   z-index: 1000;
   width: 100%;
-  position: relative; 
+  position: relative;
 }
 
 .menu-bar a img {
   height: 100px;
   width: 100px;
-  margin: 5px 40px; 
-  border-radius: 50%; 
-  object-fit: cover; 
+  margin: 5px 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .menu-bar ul {
@@ -33,7 +32,7 @@
   height: 60px;
   margin: 15px;
   padding: 15px;
-  position: relative; 
+  position: relative;
 }
 
 .menu-bar ul li a {
@@ -52,14 +51,12 @@
 }
 
 .sub-menu-1,
-.sub-menu2
- {
+.sub-menu2 {
   display: none;
   position: absolute;
   background: #0d5c7e;
-  z-index: 1001; 
+  z-index: 1001;
 }
-
 
 .menu-bar ul li:hover .sub-menu-1 {
   display: block;
@@ -68,7 +65,7 @@
 }
 
 .menu-bar ul li:hover .sub-menu2 {
-  display: none; 
+  display: none;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul {
@@ -113,18 +110,17 @@
   align-items: center;
 }
 
-
 .menu-bar a.button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px; 
-  padding: 0 20px; 
-  margin: 15px; 
+  height: 60px;
+  padding: 0 20px;
+  margin: 15px;
   text-decoration: none;
   color: #0d5c7e;
   border: 2px solid white;
-  border-radius: 30px; 
+  border-radius: 30px;
   transition: all 0.3s ease;
 }
 
@@ -135,19 +131,17 @@
 }
 
 .menu-bar a.button:focus {
-   outline: none; 
+  outline: none;
 }
 
 /* Style for the hamburger icon */
 .hamburger {
-  font-size: 2em;  /* Increase the font size */
-  padding: 10px;  /* Add some padding around the icon */
-  color: white;   /* Change the color if needed */
+  font-size: 2em; /* Increase the font size */
+  padding: 10px; /* Add some padding around the icon */
+  color: white; /* Change the color if needed */
 }
 
-
 /* end of style of header  */
-
 
 /* Responsive styling for header */
 @media (max-width: 768px) {
@@ -181,7 +175,7 @@
   .menu-bar a.button {
     display: none;
   }
-  
+
   .menu-bar .hamburger {
     display: block;
     cursor: pointer;
@@ -199,98 +193,14 @@
   }
 }
 
-
-
-/* Responsive styling for header */
-/* 
-@media (max-width: 768px) {
-  .menu-bar ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #0d5c7e;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    z-index: 1000;
-  }
-
-  .menu-bar.active ul {
-    display: flex;
-  }
-
-  .menu-bar ul li {
-    width: 100%;
-    margin: 0;
-    padding: 15px;
-    text-align: center;
-    position: relative; 
-  }
-
-  .menu-bar ul li .sub-menu-1 {
-    position: static; 
-    display: none;
-    width: 100%;
-  }
-
-  .menu-bar ul li.active .sub-menu-1 {
-    display: block;
-  }
-
-  .menu-bar ul li .sub-menu-1 ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-  }
-
-  .menu-bar ul li .sub-menu-1 ul li {
-    width: 100%;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    text-align: center;
-  }
-
-  .menu-bar ul li .sub-menu-1 ul li:last-child {
-    border-bottom: none;
-  }
-
-  .menu-bar a.button {
-    display: none;
-  }
-  
-  .menu-bar .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menu-bar a img {
-    height: 50px;
-    width: 50px;
-  }
-} */
-
-
-
 /* Nav-Link's to active as you scroll through section */
 
 nav .menu-bar ul li.active {
-background-color: #1092ad;
-border-radius:20px;
-transition: 1s;
+  background-color: #1092ad;
+  border-radius: 20px;
+  transition: 1s;
 }
 
-nav .menu-bar ul li.active  a {
-color: #ffffff;
+nav .menu-bar ul li.active a {
+  color: #ffffff;
 }
-
-
-/* 
-.menu-bar ul li:hover .sub-menu-1,
-.menu-bar ul li .sub-menu-1:hover,
-.menu-bar ul li:hover .sub-menu2,
-.menu-bar ul li .sub-menu2:hover {
-    display: block; /* Display on hover */
-} */
-
