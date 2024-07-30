@@ -3701,7 +3701,6 @@ section {
   cursor: pointer;
   user-select: none;
   transition: 0.25s all ease;
-  white-space: pre-wrap;
 }
 
 .button:focus,
@@ -4780,7 +4779,8 @@ textarea.form-input.form-input-lg {
 
 * + .button.form-button,
 * + .form-button {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .form-label,
@@ -20200,15 +20200,13 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 * ==================================================
 */
 
-
 /* Custom button styles */
 .button.button-block.button-secondary {
   height: 50px; /* Adjust the height as needed */
   display: flex;
-  align-items: center ;
-  justify-content: center ;
+  align-items: center;
+  justify-content: center;
   padding: 0; /* Remove default padding */
   font-size: 16px; /* Adjust font size as needed */
-  text-align: center ;
-  
+  text-align: center;
 }
