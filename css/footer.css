@@ -251,5 +251,7 @@ footer .underline span {
 }
 
 .developer-credit a:hover {
-  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  transition: font-size 0.3s ease-out;
 }
