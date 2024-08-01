@@ -55,14 +55,16 @@
   padding: 20px;
   background-color: #ffffff;
   border-radius: 8px; /* Rounded corners */
+  display: flex;
+  }
 }
 
 /* Responsive Padding for Form */
 @media (max-width: 767px) {
   .php-email-form {
     padding: 15px;
-  }
 }
+
 
 /* Form Message Styles */
 .php-email-form .error-message {
