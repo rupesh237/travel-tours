@@ -5246,7 +5246,7 @@ textarea.form-input.form-input-lg {
 }
 
 .form-request {
-  padding: 30px 15px;
+  padding: 30px 15px; /*30 15*/
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;
@@ -5257,7 +5257,7 @@ textarea.form-input.form-input-lg {
 
 @media (min-width: 1200px) {
   .form-request {
-    padding: 40px 35px;
+    padding: 20px 20px; /*40 35*/
   }
 }
 
@@ -5292,7 +5292,7 @@ textarea.form-input.form-input-lg {
   align-content: flex-end;
   margin-left: -8px;
   margin-right: -8px;
-  margin-bottom: -15px;
+  margin-bottom: -15px; /*-15*/
   transform: translateY(-15px);
 }
 
@@ -5357,16 +5357,16 @@ textarea.form-input.form-input-lg {
 }
 
 .form-request-modern {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 0; /*30*/
+  margin-bottom: 0;
 }
 
 .form-request-modern * + .rd-mailform {
-  margin-top: 10px;
+  margin-top: 0; /*10*/
 }
 
 .form-request-modern * + .form-button {
-  margin-top: 30px;
+  margin-top: 0; /*30*/
 }
 
 @media (min-width: 1200px) {
@@ -5378,7 +5378,7 @@ textarea.form-input.form-input-lg {
 
 @media (min-width: 1600px) {
   .form-request-modern * + .form-button {
-    margin-top: 40px;
+    margin-top: 40px; /*40*/
   }
 }
 
@@ -16131,7 +16131,7 @@ html.tablet .ui-to-top {
 /* Pagination Styles */
 .swiper-pagination-wrap {
   position: absolute;
-  bottom: 30px;
+  bottom: 30px; /*30*/
   left: 50%;
   z-index: 10;
   width: 100%;
@@ -16888,7 +16888,7 @@ html.tablet .ui-to-top {
   .swiper-form-wrap .form-request-wrap {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 50%; /* 50% */
     transform: translate3d(0, -50%, 0);
     left: 0;
     right: 0;
@@ -20210,3 +20210,5 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   font-size: 16px; /* Adjust font size as needed */
   text-align: center;
 }
+
+

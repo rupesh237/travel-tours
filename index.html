@@ -526,6 +526,19 @@
                         />
                       </div>
                     </div>
+                    <div class="col-sm-12">
+                      <label class="form-label-outside">Contact Number</label>
+                      <div class="form-wrap form-wrap-inline">
+                        <input
+                          type="text"
+                          class="form-input contact-number-input"
+                          name="contact-number"
+                          placeholder="Enter your contact number"
+                          pattern="\d*"
+                          inputmode="numeric"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div class="from-wrap form-button">
                     <button
@@ -781,7 +794,9 @@
           <div class="col-xl-8">
             <div class="parallax-text-wrap">
               <h3>Our Best Tours</h3>
-              <span class="parallax-text" style="color: rgb(245, 245, 245);">Hot tours</span>
+              <span class="parallax-text" style="color: rgb(245, 245, 245)"
+                >Hot tours</span
+              >
             </div>
             <hr class="divider divider-decorate" />
           </div>
@@ -1313,7 +1328,9 @@
 
         <div class="row">
           <!-- First Column: Contact Information -->
-          <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
             <div class="p-4">
               <div class="info-wrap">
                 <div class="info-item d-flex">
@@ -1557,5 +1574,18 @@
       src="//code.tidio.co/qwndi2utjjpzpe8rz7ra9bsmnzkgltkt.js"
       async
     ></script>
+
+    <!--JS for input validation-->
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const contactNumberInput = document.querySelector(
+          ".contact-number-input"
+        );
+
+        contactNumberInput.addEventListener("input", function (e) {
+          this.value = this.value.replace(/[^0-9]/g, "");
+        });
+      });
+    </script>
   </body>
 </html>
