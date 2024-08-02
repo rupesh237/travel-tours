@@ -3332,6 +3332,7 @@ section {
   transition: 450ms ease-in-out;
   margin-left: auto;
   margin-right: auto;
+  height: 530px;
 }
 
 .box-minimal-border .box-minimal-icon {
@@ -20211,4 +20212,7 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   text-align: center;
 }
 
+.contact-number-input::placeholder {
+  color: #1092ad;
+}
 
