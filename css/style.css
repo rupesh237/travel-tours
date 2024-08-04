@@ -3332,7 +3332,6 @@ section {
   transition: 450ms ease-in-out;
   margin-left: auto;
   margin-right: auto;
-  height: 530px;
 }
 
 .box-minimal-border .box-minimal-icon {
@@ -4823,9 +4822,9 @@ textarea.form-input.form-input-lg {
 .form-label-outside {
   padding-left: 21px;
   margin-bottom: 3px;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.02em;
-  color: #838386;
+  color: #0d5c7e;
   pointer-events: auto;
   cursor: pointer;
 }
@@ -20216,3 +20215,15 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   color: #1092ad;
 }
 
+#toCityInput::placeholder {
+  color: #1092ad;
+}
+
+#fromCityInput::placeholder {
+  color: #1092ad;
+}
+
+.post-blog-image {
+  width: auto;
+  height: 320px;
+}

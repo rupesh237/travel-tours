@@ -1,13 +1,13 @@
 /* Contact Section Styles */
 .contact-section {
-  background-color: #f1f1f1; /* Soft background for the section */
-  padding: 60px 0; /* Extra padding for emphasis */
+  background-color: #f1f1f1; 
+  padding: 60px 0; 
 }
 
-.contact-section h3 {
+/* .contact-section h3 {
   font-size: 34px;
-  color: #003366; /* Darker blue for contrast */
-}
+  color: #003366; 
+} */
 
 .contact-section p {
   font-size: 18px;
@@ -55,9 +55,8 @@
   padding: 20px;
   background-color: #ffffff;
   border-radius: 8px; /* Rounded corners */
-  display: flex;
   }
-}
+
 
 /* Responsive Padding for Form */
 @media (max-width: 767px) {
@@ -65,6 +64,9 @@
     padding: 15px;
 }
 
+#send-message-form {
+  width: 100%;
+}
 
 /* Form Message Styles */
 .php-email-form .error-message {
@@ -135,7 +137,7 @@
 /* Submit Button Styles */
 .php-email-form button[type="submit"] {
   color: #ffffff;
-  background: #003366;
+  background: #0d5c7e;
   border: 0;
   padding: 12px 25px;
   border-radius: 50px;
@@ -143,7 +145,7 @@
 }
 
 .php-email-form button[type="submit"]:hover {
-  background: #002244; /* Even darker blue on hover */
+  background: #1092ad; /* Even darker blue on hover */
 }
 
 /* Loading Animation */
@@ -191,6 +193,7 @@
   .info-wrap,
   .php-email-form {
     padding: 15px; /* Adjust padding for smaller screens */
+    width: 100%;
   }
 }
 
@@ -271,7 +274,7 @@
 
 .php-email-form label {
   text-align: left;
-  display: block; /* Ensure label takes full width of the parent */
-  margin-bottom: 0.5rem; /* Adjust spacing as needed */
+  display: block; 
+  margin-bottom: 0.5rem; 
   color: black;
 }

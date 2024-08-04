@@ -19,6 +19,39 @@
         bottom: 50px !important;
         right: 10px !important;
       }
+
+      /*form from and to */
+
+      .dropdown-list {
+        display: none;
+        position: absolute;
+        background-color: #ffffff !important; /* Ensure the background color of the dropdown is white */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+        z-index: 1;
+        border-radius: 4px !important; /* Add border radius */
+        overflow: hidden !important; /* Ensure the border radius is applied correctly */
+      }
+
+      .dropdown-list div {
+        background-color: #ffffff !important; /* Set the background color of each dropdown item to white */
+        color: black !important;
+        padding: 8px 16px !important; /* Adjusted padding for better spacing */
+        text-decoration: none !important;
+        display: block !important;
+        box-sizing: border-box !important; /* Ensure padding does not affect the box size */
+        width: 100% !important;
+      }
+
+      .dropdown-list div:hover {
+        background-color: #1092ad !important; /* Highlight background color on hover */
+        color: #ffffff !important; /* Change text color on hover for better contrast */
+      }
+
+      .form-wrap {
+        position: relative !important; /* Ensure the dropdown is positioned relative to the input */
+      }
+
     </style>
 
     <!-- Stylesheets -->
@@ -435,33 +468,37 @@
                     <div class="col-sm-12">
                       <label class="form-label-outside">From</label>
                       <div class="form-wrap form-wrap-inline">
-                        <select
-                          class="form-input select-filter"
-                          data-placeholder="All"
-                          data-minimum-results-for-search="Infinity"
-                          name="city"
-                        >
-                          <option value="1">Kathmandu</option>
-                          <option value="2">Chitwan</option>
-                          <option value="3">Jomson</option>
-                          <option value="4">Everest Base Camp</option>
-                        </select>
+                        <input
+                          type="text"
+                          class="form-input"
+                          id="fromCityInput"
+                          placeholder="Enter or select city"
+                          autocomplete="off"
+                        />
+                        <div class="dropdown-list" id="fromDropdownList">
+                          <div>Kathmandu</div>
+                          <div>Chitwan</div>
+                          <div>Jomson</div>
+                          <div>Everest Base Camp</div>
+                        </div>
                       </div>
                     </div>
                     <div class="col-sm-12">
                       <label class="form-label-outside">To</label>
                       <div class="form-wrap form-wrap-inline">
-                        <select
-                          class="form-input select-filter"
-                          data-placeholder="All"
-                          data-minimum-results-for-search="Infinity"
-                          name="city"
-                        >
-                          <option value="1">Kathmandu</option>
-                          <option value="2">Chitwan</option>
-                          <option value="3">Jomson</option>
-                          <option value="4">Everest Base Camp</option>
-                        </select>
+                        <input
+                          type="text"
+                          class="form-input"
+                          id="toCityInput"
+                          placeholder="Enter or select city"
+                          autocomplete="off"
+                        />
+                        <div class="dropdown-list" id="toDropdownList">
+                          <div>Kathmandu</div>
+                          <div>Chitwan</div>
+                          <div>Jomson</div>
+                          <div>Everest Base Camp</div>
+                        </div>
                       </div>
                     </div>
                     <div class="col-sm-12 col-lg-6">
@@ -478,10 +515,6 @@
                         <label class="form-label" for="dateForm"
                           >Choose the date</label
                         >
-                        <!--select.form-input.select-filter(data-placeholder="All", data-minimum-results-for-search="Infinity",  name='city')-->
-                        <!--  option(value="1") Choose the date-->
-                        <!--  option(value="2") Primary-->
-                        <!--  option(value="3") Middle-->
                       </div>
                     </div>
                     <div class="col-sm-12 col-lg-6">
@@ -566,8 +599,11 @@
         <div
           class="row"
           style="
-            background-image: url('https://images.unsplash.com/photo-1580089592996-2d9f15d8acfa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-image: url('https://images.pexels.com/photos/11963314/pexels-photo-11963314.jpeg');
             padding: 40px 80px;
+            background-color: #1092ad;
+            background-size: cover;
+            position: relative;
           "
         >
           <!--story image-->
@@ -1046,7 +1082,7 @@
       <div class="container-wide mb-5">
         <div class="row row-50">
           <div class="col-sm-12">
-            <h3>Latest News</h3>
+            <h3>Latest Blogs</h3>
             <div class="divider divider-decorate"></div>
             <!-- Owl Carousel-->
             <div
@@ -1066,8 +1102,7 @@
                   ><img
                     src="images/landing-private-airlines-7-570x415.jpg"
                     alt=""
-                    width="570"
-                    height="415"
+                    
                 /></a>
                 <div class="post-blog-caption">
                   <div class="post-blog-caption-header">
@@ -1102,8 +1137,7 @@
                   ><img
                     src="images/landing-private-airlines-8-570x415.jpg"
                     alt=""
-                    width="570"
-                    height="415"
+                 
                 /></a>
                 <div class="post-blog-caption">
                   <div class="post-blog-caption-header">
@@ -1138,8 +1172,7 @@
                   ><img
                     src="https://i.ytimg.com/vi/rMEbL4gnD1A/maxresdefault.jpg"
                     alt=""
-                    width="570"
-                    height="415"
+                    
                 /></a>
                 <div class="post-blog-caption">
                   <div class="post-blog-caption-header">
@@ -1371,8 +1404,12 @@
             </div>
           </div>
           <!-- Second Column: Contact Form -->
-          <div class="col-md-6 d-flex align-items-center">
-            <div class="php-email-form align-items-center">
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="php-email-form d-flex align-items-center justify-content-center"
+            >
               <form id="send-message-form" name="submit-to-google-sheet">
                 <div class="row gy-4">
                   <div class="col-md-6">
@@ -1416,7 +1453,19 @@
                     ></textarea>
                   </div>
                   <div class="col-md-12 text-center">
-                    <button type="submit" style="margin-top: 10px">
+                    <button
+                      class="button-submit"
+                      type="submit"
+                      style="
+                        margin-top: 10px;
+                        color: #ffffff;
+                        background: #0d5c7e;
+                        border: 0;
+                        padding: 12px 25px;
+                        border-radius: 50px;
+                        transition: background-color 0.3s ease;
+                      "
+                    >
                       Send Message
                     </button>
                   </div>
@@ -1590,6 +1639,54 @@
     </script>
 
     <!--JS to dynamically replace the <select> elements with custom input fields and dropdown lists-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function setupDropdown(inputId, dropdownId) {
+          const input = document.getElementById(inputId);
+          const dropdown = document.getElementById(dropdownId);
+          const options = dropdown.querySelectorAll("div");
 
+          // Show the dropdown list when the input field is clicked
+          input.addEventListener("click", function () {
+            dropdown.style.display = "block";
+          });
+
+          // Filter dropdown options based on user input
+          input.addEventListener("input", function () {
+            const filter = input.value.toLowerCase(); // Convert input value to lowercase for case-insensitive comparison
+            options.forEach((option) => {
+              if (option.textContent.toLowerCase().includes(filter)) {
+                // Check if option includes the input value
+                option.style.display = "block"; // Show option if it matches the input
+              } else {
+                option.style.display = "none"; // Hide option if it doesn't match the input
+              }
+            });
+          });
+
+          // Set input field value to the selected option and hide the dropdown
+          options.forEach((option) => {
+            option.addEventListener("click", function () {
+              input.value = option.textContent; // Set input value to the selected option text
+              dropdown.style.display = "none"; // Hide the dropdown list
+            });
+          });
+
+          // Hide the dropdown list when clicking outside of the input field or dropdown list
+          document.addEventListener("click", function (event) {
+            if (
+              !input.contains(event.target) && // Check if the click is outside the input field
+              !dropdown.contains(event.target) // Check if the click is outside the dropdown list
+            ) {
+              dropdown.style.display = "none"; // Hide the dropdown list
+            }
+          });
+        }
+
+        // Setup the dropdowns for both "From" and "To" inputs
+        setupDropdown("fromCityInput", "fromDropdownList");
+        setupDropdown("toCityInput", "toDropdownList");
+      });
+    </script>
   </body>
 </html>
